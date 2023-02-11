@@ -1,0 +1,115 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --Fontsize: 15px;
+    --fontfamily:  'Overpass', sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: var(--VeryDarkBlue);
+    font-family: var(--fontfamily);
+}
+#container{
+    color: white;
+    width: 325px;
+    height: 340px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: calc(50vh - 170px);
+    background-color: var(--DarkBlue);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.contimg{
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    background-color: hsl(216, 12%, 25%);
+    border: none;
+    color: var(--LightGrey);
+}
+.contimg img{
+    height: 20px;
+    width: 20px;
+    margin: 13px;
+}
+.heading{
+    font-weight: 700;
+}
+.para{
+    font-size: 15px;
+    color: var(--LightGrey);
+}
+
+.contselect{
+    display: flex;
+    justify-content: space-around;
+}
+
+.selector{
+    padding: 5px;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    background-color: hsl(216, 12%, 25%);
+    border: none;
+    color: var(--LightGrey);
+    font: inherit;
+}
+.selector:hover{
+    background-color: var(--MediumGrey);
+    color: var(--White);
+}
+#submit{
+    padding: 15px;
+    border-radius: 20px;
+    font: inherit;
+    color: var(--White);
+    background-color: var(--Orange);
+    border: none;
+}
+#submit:hover{
+    color: var(--Orange);
+    background-color: var(--White);
+}
+
+.selector_click{
+    color: var(--White);
+    background-color: var(--Orange);
+
+}
+
+#tq{
+    margin: 15px auto;
+    margin-bottom: 5px;
+}
+#ta_txt{
+    font-weight: 700;
+    
+}
+
+#rating{
+    color: var(--Orange);
+    background-color: rgb(255 255 255 / 10%);
+    padding: 5px 3px 5px 3px;
+    width: 70%;
+    border-radius: 50px;
+    font-size: var(--Fontsize);
+}
+
+@media (max-width:325px){
+    #container{
+        width: 300px;
+    }
+}
