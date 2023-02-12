@@ -116,6 +116,23 @@ body{
     font-size: var(--Fontsize);
 }
 
+#ani_1{
+    animation: exclaim 2s ease-in-out 0s 2 forwards alternate;
+    transform: rotate(180deg);
+    display: inline-block;
+}
+
+@keyframes exclaim {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        color: orange;
+        transform: rotate(360deg)  translateY(50px) scale(2);
+    }
+}
+
 @media (max-width:325px){
     #container{
         width: 300px;
