@@ -62,14 +62,18 @@
       element.addEventListener(`click`, () => {
         if (element.classList.contains(`selector_click`)) {
           element.classList.remove(`selector_click`)
+          element.classList.add(`selector`)
           stars = null
         } else {
           for(let item of selectors) {
             item.classList.remove(`selector_click`)
+            item.classList.add(`selector`)
             submit.onclick= () => {
+              item.classList.add(`selector`)
               item.classList.remove(`selector_click`)
             }
           }
+          element.classList.remove(`selector`)
           element.classList.add(`selector_click`)
           stars = element.innerHTML
         }

@@ -87,6 +87,12 @@ body{
 .selector_click{
     color: var(--White);
     background-color: var(--Orange);
+    padding: 5px;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    border: none;
+    font: inherit;
 
 }
 
