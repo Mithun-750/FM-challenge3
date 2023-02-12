@@ -66,6 +66,7 @@ body{
     border: none;
     color: var(--LightGrey);
     font: inherit;
+    transition: all 0.3s ease-in-out;
 }
 .selector:hover{
     background-color: var(--MediumGrey);
@@ -78,6 +79,7 @@ body{
     color: var(--White);
     background-color: var(--Orange);
     border: none;
+    transition: all 0.5s ease-in-out;
 }
 #submit:hover{
     color: var(--Orange);
